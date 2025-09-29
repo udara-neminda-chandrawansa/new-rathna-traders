@@ -15,8 +15,17 @@
 
 /* ======= GLOBAL ======= */
 
-
-
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/futura-light-bt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.ttf") format("truetype");
+}
+body{
+	font-family: "Futura", serif;
+}
 body p {
 	font-weight: 300;
 	line-height: 1.6923;
@@ -61,7 +70,7 @@ img.pull-left {
 }
 
 .ui-title-block {
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 40px;
 	font-weight: 700;
 	color: #222;
@@ -88,7 +97,7 @@ img.pull-left {
 
 .ui-title-inner {
 	margin-bottom: 12px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 16px;
 	font-weight: 700;
 	color: #222;
@@ -257,7 +266,7 @@ img.pull-left {
 
 .brand-link {
 	display: block;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1;
@@ -451,7 +460,7 @@ img.pull-left {
 }
 .card__label {
 	display: block;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 11px;
 	font-weight: 700;
 	color: #fff;
@@ -601,7 +610,7 @@ img.pull-left {
 .footer-title {
 	margin-top: 10px;
 	margin-bottom: 0;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 30px;
 	font-weight: 700;
 	color: #fff;
@@ -771,7 +780,7 @@ img.pull-left {
 }
 .link-img__title {
 	display: block;
-	font: 600 15px Raleway;
+	font: 600 15px "Helvetica";
 	color: #fff;
 	text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
 	transition: all 0.3s;
@@ -813,7 +822,7 @@ img.pull-left {
 
 .main-block {
 	margin: 40px 350px 86px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	color: #555;
 	text-transform: uppercase;
 }
@@ -862,7 +871,7 @@ img.pull-left {
 }
 .list-services__title {
 	margin-bottom: 15px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 18px;
 	color: #fff;
 }
@@ -971,7 +980,7 @@ img.pull-left {
 
 .list-progress__name {
 	display: block;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 15px;
 	font-weight: 600;
 	color: #999;
@@ -1017,7 +1026,7 @@ img.pull-left {
 	display: block;
 	width: 360px;
 	height: 210px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	color: #fff;
 	border-top: 1px solid #333;
 	border-bottom: 1px solid #333;
@@ -1140,7 +1149,7 @@ img.pull-left {
 	box-shadow: -5px 0 0 0 #999;
 }
 .list-staff__name {
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 15px;
 	font-weight: 700;
 	color: #222;
@@ -1216,7 +1225,7 @@ img.pull-left {
 }
 .staff-progress__title {
 	margin-bottom: 22px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 12px;
 	font-weight: 700;
 	color: #555;
@@ -1256,7 +1265,7 @@ img.pull-left {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	padding-left: 40px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 16px;
 	font-weight: 700;
 	color: #222;
@@ -1287,7 +1296,7 @@ img.pull-left {
 	margin-left: 115px;
 }
 .reviews__name {
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-weight: 700;
 	color: #555;
 	transition: all 0.3s;
@@ -1367,7 +1376,7 @@ img.pull-left {
 	padding-top: 7px;
 	padding-bottom: 9px;
 	padding-left: 26px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 26px;
 	font-weight: 700;
 	color: #222;
@@ -1405,7 +1414,7 @@ img.pull-left {
 }
 .letter__title {
 	margin-bottom: 14px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 1.16;
@@ -1413,7 +1422,7 @@ img.pull-left {
 }
 .letter__btn {
 	float: right;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 14px;
 	font-weight: 700;
 	color: #fff;
@@ -1551,7 +1560,7 @@ img.pull-left {
 }
 .main-slider__subtitle {
 	margin-bottom: 25px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 26px;
 	font-weight: 500;
 }
@@ -1615,7 +1624,7 @@ img.pull-left {
 }
 .slider-grid__name {
 	display: inline-block;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-weight: 600;
 	background-color: rgba(0, 0, 0, 0.7);
 	transition: all 0.3s;
@@ -1730,7 +1739,7 @@ img.pull-left {
 }
 .slider-gallery__title {
 	margin-top: 16px;
-	font-family: Raleway;
+	font-family: "Helvetica";
 	font-size: 15px;
 	font-weight: 600;
 }
@@ -1873,3 +1882,6 @@ transform: rotate(360deg);
 }
 
 
+h1, h2, h3, h4, h5, h6{
+	font-family: "Helvetica", serif !important;
+}
