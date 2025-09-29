@@ -110,33 +110,47 @@ $(function() {
     //  HOME PAGE SLIDER
     /////////////////////////////////////
 	
-	var sliderpro1 = $('#sliderpro1');
+	var sliderpro1 = $('#sliderpro1') ;
 
-if (sliderpro1.length > 0) {
-    // Check if mobile screen
-    var isMobile = window.innerWidth <= 768;
+
+    if (sliderpro1.length > 0) {
+
+        sliderpro1.sliderPro({
+            width: 2000,
+            height: 900,
+            fade: true,
+            arrows: true,
+            buttons: false,
+            waitForLayers: false,
+            thumbnailPointer: false,
+            touchSwipe: false,
+            autoplay: true,
+            autoScaleLayers: true
+
+        });
+
+    }	
     
-    sliderpro1.sliderPro({
-        width: '100%',
-        height: isMobile ? '60dvh' : 900,
-        fade: true,
-        arrows: true,
-        buttons: false,
-        waitForLayers: false,
-        thumbnailPointer: false,
-        touchSwipe: false,
-        autoplay: true,
-        autoScaleLayers: true
-    });
-    
-    // Update height on window resize
-    $(window).on('resize', function() {
-        var isMobileNow = window.innerWidth <= 768;
-        if (isMobileNow) {
-            sliderpro1.data('sliderPro').resize();
-        }
-    });
-}
+    var sliderpro2 = $('#sliderpro2') ;
+
+
+    if (sliderpro2.length > 0) {
+
+        sliderpro2.sliderPro({
+            width: 2000,
+            height: 900,
+            fade: true,
+            arrows: true,
+            buttons: false,
+            waitForLayers: false,
+            thumbnailPointer: false,
+            touchSwipe: false,
+            autoplay: true,
+            autoScaleLayers: true
+
+        });
+
+    }
 
 /////////////////////////////////////////////////////////////////
 //   Dropdown Menu Fade
