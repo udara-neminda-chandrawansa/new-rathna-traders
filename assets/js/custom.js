@@ -110,26 +110,33 @@ $(function() {
     //  HOME PAGE SLIDER
     /////////////////////////////////////
 	
-	var sliderpro1 = $('#sliderpro1') ;
+	var sliderpro1 = $('#sliderpro1');
 
-
-    if (sliderpro1.length > 0) {
-
-        sliderpro1.sliderPro({
-            width: 2000,
-            height: 900,
-            fade: true,
-            arrows: true,
-            buttons: false,
-            waitForLayers: false,
-            thumbnailPointer: false,
-            touchSwipe: false,
-            autoplay: true,
-            autoScaleLayers: true
-
-        });
-
-    }
+if (sliderpro1.length > 0) {
+    // Check if mobile screen
+    var isMobile = window.innerWidth <= 768;
+    
+    sliderpro1.sliderPro({
+        width: '100%',
+        height: isMobile ? '100dvh' : 900,
+        fade: true,
+        arrows: true,
+        buttons: false,
+        waitForLayers: false,
+        thumbnailPointer: false,
+        touchSwipe: false,
+        autoplay: true,
+        autoScaleLayers: true
+    });
+    
+    // Update height on window resize
+    $(window).on('resize', function() {
+        var isMobileNow = window.innerWidth <= 768;
+        if (isMobileNow) {
+            sliderpro1.data('sliderPro').resize();
+        }
+    });
+}
 
 /////////////////////////////////////////////////////////////////
 //   Dropdown Menu Fade

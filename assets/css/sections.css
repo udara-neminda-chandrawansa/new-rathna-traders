@@ -1,5 +1,5 @@
 .wrap-section-border {
-	padding-top: 30px;
+	padding-top: 0px;
 	overflow: hidden;
 }
 
@@ -24,10 +24,10 @@
 	opacity: 0.1;
 	content: '';
 }
-.section-bg .bg-inner {
+/* .section-bg .bg-inner {
 	padding-top: 60px;
     padding-bottom: 30px;
-}
+} */
 
 .section-bg-2:before {
 	position: absolute;
@@ -40,8 +40,8 @@
 
 .section_default {
 	position: relative;
-	padding-top: 90px;
-	padding-bottom: 130px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .section_mod-a {
 	position: relative;
