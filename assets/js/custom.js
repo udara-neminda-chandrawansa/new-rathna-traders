@@ -118,7 +118,7 @@ if (sliderpro1.length > 0) {
     
     sliderpro1.sliderPro({
         width: '100%',
-        height: isMobile ? '100dvh' : 900,
+        height: isMobile ? '60dvh' : 900,
         fade: true,
         arrows: true,
         buttons: false,
