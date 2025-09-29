@@ -836,7 +836,7 @@ img.pull-left {
 
 .list-services {
 	position: relative;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 	padding: 22px 22px 22px 0;
 	background: #222;
 	transition: all 1s;
@@ -1598,7 +1598,7 @@ img.pull-left {
 }
 
 .slider-services {
-	height: 410px;
+	/* height: 410px; */
 	margin-top: 60px;
 	margin-bottom: 25px;
 }
