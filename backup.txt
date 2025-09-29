@@ -171,16 +171,16 @@
               <div class="main-slider__inner text-left">
                 <div class="custom-caption">
                   <a class="main-slider__btn btn-effect" href="javascript:void(0);"><span
-                      class="main-slider__btn_inner">TOP BRANDS 2025</span></a>
-                  <div class="main-slider__title">MODERN-CLASSIC</div>
+                      class="main-slider__btn_inner">the all new</span></a>
+                  <div class="main-slider__title">2016 Atura ILX</div>
                   <div class="main-slider__subtitle">
                     High Performance & Outstanding Technology Combined
                   </div>
                   <div class="decor-1"></div>
+                  <div class="main-slider__text">Starts from</div>
                   <div>
-<a href="javascript:void(0);" class="btn btn-danger btn-lg px-5 py-3" style="font-size: 18px; letter-spacing: 1px; background-color: #e63946; border: none;">
-              Book Appointment
-            </a>                    <!-- <a class="main-slider__link" href="javascript:void(0);"><i class="icon fa fa-caret-right"></i></a> -->
+                    <span class="main-slider__price">$35,290</span>
+                    <!-- <a class="main-slider__link" href="javascript:void(0);"><i class="icon fa fa-caret-right"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -194,18 +194,18 @@
             <div class="item-wrap sp-layer sp-padding" data-horizontal="100" data-vertical="300"
               data-show-transition="left" data-hide-transition="up" data-show-delay="400" data-hide-delay="200">
               <div class="main-slider__inner text-left">
-               <div class="custom-caption">
+                <div class="custom-caption">
                   <a class="main-slider__btn btn-effect" href="javascript:void(0);"><span
-                      class="main-slider__btn_inner">TOP BRANDS 2025</span></a>
-                  <div class="main-slider__title">MODERN-CLASSIC</div>
+                      class="main-slider__btn_inner">the all new</span></a>
+                  <div class="main-slider__title">2016 Atura ILX</div>
                   <div class="main-slider__subtitle">
                     High Performance & Outstanding Technology Combined
                   </div>
                   <div class="decor-1"></div>
+                  <div class="main-slider__text">Starts from</div>
                   <div>
-<a href="javascript:void(0);" class="btn btn-danger btn-lg px-5 py-3" style="font-size: 18px; letter-spacing: 1px; background-color: #e63946; border: none;">
-              Book Appointment
-            </a>                    <!-- <a class="main-slider__link" href="javascript:void(0);"><i class="icon fa fa-caret-right"></i></a> -->
+                    <span class="main-slider__price">37,390</span>
+                    <a class="main-slider__link" href="javasript:void(0);"><i class="icon fa fa-caret-right"></i></a>
                   </div>
                 </div>
               </div>
