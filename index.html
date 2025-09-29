@@ -523,7 +523,7 @@
                   <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                       <!-- Slide 1 -->
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-toggle="modal" data-target="#vehicleModal">
                         <div class="car-card">
                           <div class="car-image-container">
                             <img src="assets/img/from-fb/1.jpg" alt="2019 Lamborghini Urus" class="car-image">
@@ -567,7 +567,7 @@
                       </div>
 
                       <!-- Slide 2 -->
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-toggle="modal" data-target="#vehicleModal">
                         <div class="car-card">
                           <div class="car-image-container">
                             <img src="assets/img/from-fb/2.jpg" alt="2021 Porsche 911" class="car-image">
@@ -611,7 +611,7 @@
                       </div>
 
                       <!-- Slide 3 -->
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-toggle="modal" data-target="#vehicleModal">
                         <div class="car-card">
                           <div class="car-image-container">
                             <img src="assets/img/from-fb/3.jpg" alt="2020 Mercedes-AMG GT" class="car-image">
@@ -655,7 +655,7 @@
                       </div>
 
                       <!-- Slide 4 -->
-                      <div class="swiper-slide">
+                      <div class="swiper-slide" data-toggle="modal" data-target="#vehicleModal">
                         <div class="car-card">
                           <div class="car-image-container">
                             <img src="assets/img/from-fb/4.jpg" alt="2022 BMW M4" class="car-image">
@@ -845,10 +845,62 @@
           _waEmbed(wa_btnSetting);
         };
       </script>
+      <!-- Vehicle Details Modal -->
+      <div class="modal fade" id="vehicleModal" tabindex="-1" role="dialog" aria-labelledby="vehicleModalLabel">
+        <div class="modal-dialog modal-lg modal-center" role="document">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="vehicleModalLabel">2019 Honda Vezel Z</h4>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <div class="row">
+                <!-- Vehicle Image -->
+                <div class="col-md-6">
+                  <img src="assets/img/from-fb/2-wide.jpg" class="img-responsive img-rounded" alt="2019 Honda Vezel Z">
+                </div>
+
+                <!-- Vehicle Info -->
+                <div class="col-md-6">
+                  <h4>Key Details</h4>
+                  <ul class="list-unstyled">
+                    <li><strong>Make:</strong> Honda</li>
+                    <li><strong>Model:</strong> Vezel Z</li>
+                    <li><strong>Year:</strong> 2019</li>
+                    <li><strong>Transmission:</strong> Automatic</li>
+                    <li><strong>Fuel Type:</strong> Hybrid (Petrol/Electric)</li>
+                    <li><strong>Mileage:</strong> 45,000 km</li>
+                    <li><strong>Color:</strong> Pearl White</li>
+                    <li><strong>Price:</strong> Rs. 8,450,000</li>
+                  </ul>
+                  <p>
+                    Well-maintained Honda Vezel Z with excellent fuel efficiency and advanced safety features.
+                    Equipped with push start, reverse camera, alloy wheels, and full service history.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <a href="#" class="btn btn-primary">Enquire Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end #wrapper -->
   </div>
   <!-- end layout-theme -->
+
 
   <span class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"> <i class="fa fa-angle-up">
     </i></span>

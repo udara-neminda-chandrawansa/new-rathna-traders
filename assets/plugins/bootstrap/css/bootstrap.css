@@ -6800,3 +6800,9 @@ button.close {
     display: none !important;
   }
 }
+.modal-dialog.modal-center {
+    position: relative;
+    top: 20%;
+    transform: translateY(-50%);
+    margin: 0 auto; /* keeps it horizontally centered */
+}
