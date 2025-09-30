@@ -591,11 +591,49 @@
             <div
               class="col-lg-6 d-flex align-items-center justify-content-lg-end"
             >
-              <div class="d-flex gap-3">
-                <button class="filter-tab active">New</button>
-                <button class="filter-tab">Certified Used</button>
-                <button class="filter-tab">Used</button>
-              </div>
+                <div class="d-flex gap-3">
+                  <button class="filter-tab active" data-filter="all">Show All</button>
+                  <button class="filter-tab" data-filter="new">New</button>
+                  <button class="filter-tab" data-filter="used">Used</button>
+                </div>
+                <script>
+                  // Set "Show All" as default active and show all cards on load
+                  document.addEventListener("DOMContentLoaded", function () {
+                    document.querySelectorAll(".filter-tab").forEach((t) => t.classList.remove("active"));
+                    const showAllBtn = document.querySelector('.filter-tab[data-filter="all"]');
+                    if (showAllBtn) showAllBtn.classList.add("active");
+                    document.querySelectorAll(".car-card").forEach((card) => {
+                      card.parentElement.style.display = "";
+                    });
+                  });
+                </script>
+              <script>
+                // Tab click handler
+                document.querySelectorAll(".filter-tab").forEach((tab) => {
+                  tab.addEventListener("click", function () {
+                    document
+                      .querySelectorAll(".filter-tab")
+                      .forEach((t) => t.classList.remove("active"));
+                    this.classList.add("active");
+
+                    const filter = this.getAttribute("data-filter");
+                    document.querySelectorAll(".car-card").forEach((card) => {
+                      let title = card.querySelector(".car-title")?.textContent?.toLowerCase() || "";
+                      let show = false;
+                      if (filter === "new") {
+                        show = title.includes("2025") || title.includes("brand new") || title.includes("new");
+                      } else if (filter === "certified") {
+                        show = title.includes("certified");
+                      } else if (filter === "used") {
+                        show = !title.includes("2025") && !title.includes("brand new") && !title.includes("new") && !title.includes("certified");
+                      } else if (filter === "all") {
+                        show = true;
+                      }
+                      card.parentElement.style.display = show ? "" : "none";
+                    });
+                  });
+                });
+              </script>
             </div>
           </div>
 
@@ -1078,18 +1116,7 @@
           </div>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-          // Filter tab functionality
-          document.querySelectorAll(".filter-tab").forEach((tab) => {
-            tab.addEventListener("click", function () {
-              document
-                .querySelectorAll(".filter-tab")
-                .forEach((t) => t.classList.remove("active"));
-              this.classList.add("active");
-            });
-          });
-        </script>
+       
 
         <!--end grid container-->
 
